@@ -33,12 +33,9 @@ console.log(student)
 
 
 
-
-
-
 // Seal
 
-var student = {
+var studentSeal = {
     firstName : "Adam",
     lastName : "Livine",
     city: 'Boston',
@@ -46,12 +43,12 @@ var student = {
 }
 
 
-Object.seal(student)
+Object.seal(studentSeal)
 
-student.email = 'adam@ef.com'
-student.city = 'Pasadena'
-delete student.age 
-console.log(student)
+studentSeal.email = 'adam@ef.com'
+studentSeal.city = 'Pasadena'
+delete studentSeal.age 
+console.log(studentSeal)
 
 
 
@@ -67,9 +64,9 @@ var studentFreeze = {
 
 
 
-Object.freeze(student)
+Object.freeze(studentFreeze)
 
-student.email = 'adam@ef.com'
-student.city = 'Pasadena'
-delete student.age 
-console.log(student)
+studentFreezeemail = 'adam@ef.com'
+studentFreeze.city = 'Pasadena'
+delete studentFreeze.age 
+console.log(studentFreeze)
