@@ -59,14 +59,22 @@ var studentFreeze = {
     firstName : "Adam",
     lastName : "Livine",
     city: 'Boston',
-    age: 35
+    age: 35,
+    address:{
+        state:'Washington'
+    }
 }
 
-
-
 Object.freeze(studentFreeze)
+Object.freeze(studentFreeze.address)
+
+
 
 studentFreezeemail = 'adam@ef.com'
 studentFreeze.city = 'Pasadena'
+studentFreeze.address.city = 'Florida'
 delete studentFreeze.age 
 console.log(studentFreeze)
+
+
+//If we stringify and parse, then we can change the data.
